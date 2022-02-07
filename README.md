@@ -33,4 +33,4 @@ end
 ```
 
 ## I want more
-We are interested. Please (reach out)["https://github.com/nutshell-lab/content-spinner/issues"] :)
+We are interested. Please [reach out](https://github.com/nutshell-lab/content-spinner/issues) :)
