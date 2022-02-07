@@ -29,7 +29,9 @@ defmodule ContentSpinner do
     end
     iex> ContentSpinner.spin(template, data, translator)
   """
-  def spin(template, data, translators) when is_list(template) do
+  def spin(template), do: spin(template, %{}, & &1)
+
+  def spin(template, data \\ %{}, translators) when is_list(template) do
     template
     |> Enum.scan(template, fn
       custom_term, _out when is_atom(custom_term) -> translators.(custom_term, data)
